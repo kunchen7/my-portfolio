@@ -17,7 +17,9 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['UM', 'Fan of Boston Celtics', 'CS&ECON！', '19'];
+      ['Birthdate includes only 0 and 2', 'Fan of Manchester United, Boston Celtics and GS Warrior', 
+      'Never considered CS as fututre college major when I was in high school', 
+      'My favourite number is 7'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
