@@ -13,18 +13,18 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Adds a random fact to the page.
  */
-function addRandomGreeting() {
-  const greetings =
+function getRandomFact() {
+  const facts =
       ['Birthdate includes only 0 and 2', 'Fan of Manchester United, Boston Celtics and GS Warrior', 
       'Never considered CS as fututre college major when I was in high school', 
-      'My favourite number is 7'];
+      'My favourite number is 7','My favourite socceer player is Cristiano Ronaldo'];
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  // Pick a random fact.
+  const fact = facts[Math.floor(Math.random() * facts.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const factContainer = document.getElementById('fact-container');
+  factContainer.innerText = fact;
 }
