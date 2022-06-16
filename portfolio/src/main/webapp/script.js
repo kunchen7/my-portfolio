@@ -15,6 +15,10 @@
 /**
  * Adds a random fact to the page.
  */
+
+
+
+
 function getRandomFact() {
   const facts =
       ['Birthdate includes only 0 and 2', 'Fan of Manchester United, Boston Celtics and GS Warrior', 
@@ -28,3 +32,24 @@ function getRandomFact() {
   const factContainer = document.getElementById('fact-container');
   factContainer.innerText = fact;
 }
+
+
+function requestTranslation() {
+    const text = document.getElementById('text').value;
+    const languageCode = document.getElementById('language').value;
+
+    const resultContainer = document.getElementById('result');
+    resultContainer.innerText = 'Please wait...';
+
+    const params = new URLSearchParams();
+    params.append('text', text);
+    params.append('languageCode', languageCode);
+
+    fetch('/translate', {
+      method: 'POST',
+      body: params
+    }).then(response => response.text())
+    .then((translatedMessage) => {
+      resultContainer.innerText = translatedMessage;
+    });
+  }
