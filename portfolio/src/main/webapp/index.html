@@ -1,122 +1,131 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div class ="nav">
-        <nav>
-        <ul>
-     <a href="#aboutme">About Me</a>
-    <a href="#projects">Projects</a>
-     <a href="#myprofile" >Experience</a>
-    <a href="#contact" >Contact Me</a>
-     <a href="#translate">Translate</a>
-    </ul>
-</nav>
-    </div>
-    <div class="first">
-        <h1>Hi, I am <span>Kun</span> Chen</h1>
-    </div>
-    <div id="kc">
-        <h2><center>KUN CHEN</center></h2>
-        <p>734-496-3088</p>
-        <p>kunchenkc7@gmail.com | Ann Arbor, MI</p>
-        <p>U of M Class of 2024</p>
-        <p>Bachelor of Science in Computer Science</p>
-        <p>Bachelor of Arts in Economics</p>
-    </div>
-      <div id="aboutme">
-    <h2><center>ABOUT ME</center></h2>
-    <a href="photo.html">
-    <img src="Image/2.jpg" 
-    width="300"
-    height="400"
-    align="center" />
-</a>
-      <p>Name: Kun Chen</p>
-      <p>English Name: Kevin</p>
-      <p>Hometown: Shanghai, China</p>
-      <p>Education: University of Michigan-Ann Arbor LSA</p>
-      <p>Major: BS in Computer Science & BA in Economics</p>
-      <p>Hobbies: Listening to music, watching movies, playing soccer</p>
-      <p>Favourite soccer team: Manchester United</p>
-      <p>Click here to get a fact about me:</p>
-      <button id="fact" onclick="getRandomFact()">Click</button>
-      <div id="fact-container">
-        <form action="/form-handler" method="POST">
+    <head>
+        <meta charset="UTF-8" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <a href="#aboutme">About Me</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#myprofile">Experience</a>
+                    <a href="#contact">Contact Me</a>
+                    <a href="#translate">Translate</a>
+                </ul>
+            </nav>
         </div>
-      </div>
-      <div id="projects">
-     <h2>SKILLS: </h2>
-     <img src="Image/c++.jpg" width="140" height="140">
-     <img src="Image/python.jpg" width="140" height="140">
-     <img src="Image/java.jpg" width="140" height="140">
-     <img src="Image/git.jpg" width="140" height="140>"     
-     <br/><br/><br/>
-     <img src="Image/html.jpg" width="140" height="140">
-     <img src="Image/css.jpg" width="140" height="140">
-     <img src="Image/javascript.jpg" width="140" height="140">
-     <img src="Image/ms.jpg" width="140" height="140">
-     <h2>PROJECTS: </h2>
-     <img src="Image/md.jpg" width="300" height="250" />
-    <img src="Image/e.jpg" width="300" height="250" />
-    </div>
-      <div id="myprofile">
-      <h2>PROFILE: </h2>
-      <p>Click <a href="https://github.com/kunchen7">here</a> to see my GitHub profile!</p>
-      <p>I have not finishing my Linkedin Profile, but I will update it immediately when my profile is ready!</p>
-      <h2>EXPERIENCE: </h2>
-      <p>Google Software Product Sprint Participant@2022</p>
-      <p>Investment Analyst Intern at Haitong Securities@2021</p>
-      <p>TOEFL TA at Qianshi Education@2020</p>
-      <img src="Image/googlelogo.jpg" width="200" height="200">
-      <img src="Image/haitong.jpg" width="200" height="200">
-      <img src="Image/toefl.jpg" width="200" height="200">
-      <br/>
-    <h2>RESUME: </h2>
-      <div id="resume">
-      <button id="resume"><a href="Kun,Chen.pdf" style="text-decoration: none;" download>Download Resume</a></button>
-    </div>
+        <div class="first">
+            <h1>Hi, I am <span>Kun</span> Chen</h1>
         </div>
-        <div id="contact">
-        <h2>CONTACT ME: </h2>
-        <form action="/form-handler" method="POST">
-        Name: <br/><input type="text" name="name-input" placeholder="Name"/>
-        <br/><br/>
-        Email:<br/><input type="text" name="email-input" placeholder="Email"/>
-        <br/><br/>
-        Contacting Reason: <select name = "wc-input">
-        <option value="Recruitment">Recruitment Interests</option>
-        <option value="Make Friends">Make Friends</option>
-        <option value="Others">Others</option>
-        </select>
-    </br></br>
-        If choose Others, please specify: <input type="text" name="other-input" placeholder="Please specify"/>
-        <br/><br/>
-        Commuciation Language preferred: 
-        <input type="checkbox" name="language" value="English"/>English
-        <input type="checkbox" name="language" value="Chinee"/>Chinese
-        <input type="checkbox" name="language" value="Japanese"/>Japanese
-        <br/><br/>
-        Message: <br/><textarea rows="6" cols ="30" name="message-input" placeholder="Message"></textarea>
-        <br/>
-        <input id="cont" type="submit" value="Contact"/>
-    </form> 
-</div>
-<br/>
-<div id = "translate">
-<h1>TRANSLATE: </h1>
-<p>If you have diffculty reading ABOUT ME section, please select the language preferred and translate</p>
-<textarea id="text">
+        <div id="kc">
+            <h2><center>KUN CHEN</center></h2>
+            <p>734-496-3088</p>
+            <p>kunchenkc7@gmail.com | Ann Arbor, MI</p>
+            <p>U of M Class of 2024</p>
+            <p>Bachelor of Science in Computer Science</p>
+            <p>Bachelor of Arts in Economics</p>
+        </div>
+        <div id="aboutme">
+            <h2><center>ABOUT ME</center></h2>
+            <br/>
+                <div style="float:left; margin-left:300px"><img src="Image/2.jpg" width="300" height="400"></div>
+            <br/>
+            <div style="text-align:center;margin-right:300px">            
+            <p>Name: Kun Chen</p>
+            <p>English Name: Kevin</p>
+            <p>Hometown: Shanghai, China</p>
+            <p>Education: University of Michigan-Ann Arbor LSA</p>
+            <p>Major: BS in Computer Science & BA in Economics</p>
+            <p>Hobbies: Listening to music, watching movies, playing soccer</p>
+            <p>Favourite soccer team: Manchester United</p>
+            <p>Click here to get a fact about me:</p>
+            <button id="fact" onclick="getRandomFact()">Click</button>
+            <div id="fact-container" style="text-align:center; margin-left:600px">
+                <form action="/form-handler" method="POST"></form>
+            </div>
+           </div>
+        </div>
+                    <div id="projects">
+                        <h2>SKILLS:</h2>
+                        <img src="Image/c++.jpg" width="140" height="140" />
+                        <img src="Image/python.jpg" width="140" height="140" />
+                        <img src="Image/java.jpg" width="140" height="140" />
+                        <img src="Image/git.jpg" width="140" height="140>" <br /><br />
+                        <br />
+                        <img src="Image/html.jpg" width="140" height="140" />
+                        <img src="Image/css.jpg" width="140" height="140" />
+                        <img src="Image/javascript.jpg" width="140" height="140" />
+                        <img src="Image/ms.jpg" width="140" height="140" />
+                        <h2>PROJECTS:</h2>
+                        <img src="Image/md.jpg" width="300" height="250" />
+                        <img src="Image/e.jpg" width="300" height="250" />
+                    </div>
+                    <div id="myprofile">
+                        <h2>PROFILE:</h2>
+                        <p>Click <a href="https://github.com/kunchen7">here</a> to see my GitHub profile!</p>
+                        <p>I have not finishing my Linkedin Profile, but I will update it immediately when my profile is ready!</p>
+                        <h2>EXPERIENCE:</h2>
+                        <p>Google Software Product Sprint Participant@2022</p>
+                        <p>Investment Analyst Intern at Haitong Securities@2021</p>
+                        <p>TOEFL TA at Qianshi Education@2020</p>
+                        <img src="Image/googlelogo.jpg" width="200" height="200" />
+                        <img src="Image/haitong.jpg" width="200" height="200" />
+                        <img src="Image/toefl.jpg" width="200" height="200" />
+                        <br />
+                        <h2>RESUME:</h2>
+                        <div id="resume">
+                            <button id="resume"><a href="Kun,Chen.pdf" style="text-decoration: none;" download>Download Resume</a></button>
+                        </div>
+                    </div>
+                    <div id="contact">
+                        <h2>CONTACT ME:</h2>
+                        <form action="/form-handler" method="POST">
+                            <div class="contact_input">
+                                Name: <br />
+                                <input type="text" name="name-input" placeholder="Name" />
+                            </div>
+                            <div class="contact_input">
+                                Email:<br /><input type="text" name="email-input" placeholder="Email" />
+                            </div>
+                            <div class="contact_input">
+                                Contacting Reason:<br />
+                                <select name="wc-input">
+                                    <option value="Recruitment">Recruitment Interests</option>
+                                    <option value="Make Friends">Make Friends</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                            <div class="contact_input">
+                                If choose Others, please specify: <br/>
+                                <input type="text" name="other-input" placeholder="Please specify" />
+                            </div>
+                            <div class="contact_input">
+                                Commuciation Language preferred:
+                                <input type="checkbox" name="language" value="English" />English <input type="checkbox" name="language" value="Chinee" />Chinese <input type="checkbox" name="language" value="Japanese" />Japanese
+                            </div>
+                            <div class="contact_input">
+                                Message: <br />
+                                <textarea rows="6" cols="30" name="message-input" placeholder="Message"></textarea>
+                            </div>
+                            <div class="contact_input">
+                                <input id="cont" type="submit" value="Contact" />
+                            </div>
+                        </form>
+                    </div>
+                    <br />
+                    <div id="translate">
+                        <h1>TRANSLATE:</h1>
+                        <p>If you have diffculty reading ABOUT ME section, please select the language preferred and translate</p>
+                        <textarea id="text">
     Name: Kun Chen
     English Name: Kevin
     Hometown: Shanghai, China
@@ -124,22 +133,25 @@
     Major: BS in Computer Science & BA in Economics
     Hobbies: Listening to music, watching movies, playing soccer
     Favourite soccer team: Manchester United
-</textarea>
-Language Choice: 
-    <select id="language">
-  <option value="zh-CN">Simplified Chinese 简体字</option>
-  <option value="zh-TW">Traditional Chinese 繁体字</option>
-  <option value="ja">Japanese にほんご</option>
-  <option value="ko">Korean 한국어</option>
-  <option value="es">Spanich Español</option>
-    </select>
-<br/>
-<br/>
-<button id="tran" onclick="requestTranslation();">Translate</button>
 
-<hr/>
-<div id="result">Translation: </div>
+                        </textarea>
+                        Language Choice:
+                        <select id="language">
+                            <option value="zh-CN">Simplified Chinese 简体字</option>
+                            <option value="zh-TW">Traditional Chinese 繁体字</option>
+                            <option value="ja">Japanese にほんご</option>
+                            <option value="ko">Korean 한국어</option>
+                            <option value="es">Spanish Español</option>
+                        </select>
+                        <br />
+                        <br />
+                        <button id="tran" onclick="requestTranslation();">Translate</button>
 
-</div>
-  </body>
+                        <hr />
+                        <div id="result">Translation:</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>

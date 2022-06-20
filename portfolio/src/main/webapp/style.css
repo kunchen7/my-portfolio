@@ -49,9 +49,12 @@ body{
 #aboutme{
     padding:40px;
     margin:10px;
-    text-align: center;
     min-height:100vh;
+    max-height:100vh;
     color:black;
+    text-align: center;
+    font-size: large;
+
 }
 
 #projects{
@@ -77,8 +80,8 @@ body{
     font-size: x-large;
     text-align: center;
     font-family: cursive;
-    color:white;
-    background-image: url("Image/mit.JPG");
+    color:black;
+    background-image: url("Image/b2.jpg");
     background-size: cover;
     min-height: 100vh;
     max-height:100vh;
@@ -90,10 +93,11 @@ body{
     padding:40px;
     min-height: 100vh;
     max-height:100vh;
-    font-size: large;
+    font-size: x-large;
     margin:10px;
     background-image: url("Image/bg2.jpg");
     background-size: cover;
+    text-align:left;    
 }
 
 #translate{
@@ -103,7 +107,8 @@ body{
     padding:40px;
     font-size: large;
     margin:10px;
-     color:black;
+    color:black;
+    text-align: left;
 }
 
 #text{
@@ -177,3 +182,12 @@ span{
     border-radius:20px;
     cursor:pointer;  
 }
+
+.contact-input{
+    padding-bottom: 40px;
+}
+
+.im{
+    margin-left: auto;
+}
+
